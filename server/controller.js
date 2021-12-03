@@ -1,8 +1,8 @@
-const fortunes = ["A beautiful, smart, and loving person will be coming into your life.",
-"A dubious friend may be an enemy in camouflage.",
-"A fresh start will put you on your way.",
-"A golden egg of opportunity falls into your lap this month.",
-"Don’t just think, act!"
+const fortunes = ["n ornhgvshy, fzneg, naq ybivat crefba jvyy or pbzvat vagb lbhe yvsr.",
+"n qhovbhf sevraq znl or na rarzl va pnzbhsyntr.",
+"n serfu fgneg jvyy chg lbh ba lbhe jnl.",
+"n tbyqra rtt bs bccbeghavgl snyyf vagb lbhe ync guvf zbagu.",
+"qba’g whfg guvax, npg!"
 ];
 
 let cypher = (str,slide) =>{
