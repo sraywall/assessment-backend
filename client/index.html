@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <button id="complimentButton">Get a compliment</button>
+    <button id="fortuneButton">Get a fortune</button>
+    <form id ="addFortune">
+      <input 
+          type='text'
+          id="fortune"
+          placeholder="Enter a fortune"/>
+      <button>add fortune</button>
+    </form>
+
+    <form id ="deleteFortune">
+      <input 
+          type='text'
+          id="fortune-index"
+          placeholder="Enter index of fortune"/>
+      <button>delete fortune</button>
+    </form>
+    <form id ="encryptFortune">
+      <input 
+          type='text'
+          id="fortune-index2"
+          placeholder="Enter index of fortune"/>
+      <button>encrypt/decrpyt fortune</button>
+    </form>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      document.getElementById("complimentButton").onclick = function () {
+        axios.get("http://localhost:4000/api/compliment/")
+            .then(function (response) {
+              const data = response.data;
+              alert(data);
+            });
+      };
+    </script>
+    <script src ="index.js"></script>
+  </body>
+</html>
